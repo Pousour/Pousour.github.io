@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <title>Timer</title>
+    <link rel="icon" type="image/png" href="moi.jpg" />
+  </head>
+  <body>
+    <input type="date" id="date" onchange="calcTemps(this.value)" />
+
+    <div class="colonne jours">
+      <p class="temps-jours timer">0</p>
+      <div id="bordure"></div>
+      <p class="label">Jours</p>
+    </div>
+
+    <div class="colonne heures">
+      <p class="temps-heures timer">0</p>
+      <div id="bordure"></div>
+      <p class="label">Heures</p>
+    </div>
+
+    <div class="colonne minutes">
+      <p class="temps-minutes timer">0</p>
+      <div id="bordure"></div>
+      <p class="label">Minutes</p>
+    </div>
+
+    <div class="colonne secondes">
+      <p class="temps-secondes timer">0</p>
+      <div id="bordure"></div>
+      <p class="label">Secondes</p>
+    </div>
+  </body>
+</html>

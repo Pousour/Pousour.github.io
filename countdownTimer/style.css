@@ -1,0 +1,74 @@
+@font-face {
+  font-family: Gravity-Regular;
+  src: url("polices/Gravity-Regular.otf");
+}
+
+html {
+  background-color: rgb(26, 173, 119);
+  font-family: Gravity-Regular;
+}
+
+input {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.colonne {
+  width: 20%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.timer {
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.label {
+  margin-top: 5px;
+  font-size: 1.3rem;
+}
+
+.jours {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.heures {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.minutes {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.secondes {
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#bordure {
+  width: 20%;
+  margin: auto;
+  border-bottom: 2px solid black;
+}
