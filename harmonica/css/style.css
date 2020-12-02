@@ -1,0 +1,79 @@
+.note {
+	/*width: 7%;
+	height: 50%;*/
+	width: 127px;
+	height: 95px;
+	border-radius: 10px;
+	background-color: #808080;
+	text-align: center;
+	padding-top: 35px;
+	font-size: 50px;
+	font-weight: bold;
+	z-index: 1;
+}
+
+.note:hover {
+	cursor: pointer;
+}
+
+#harmonica {
+	display: flex;
+	width: 1382px;
+	height: 364px;
+	padding-right: 233px;
+	padding-left: 233px;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+	background-image: url('../images/harmonica.png');
+	background-size: 100% 100%;
+	position: absolute;
+	top: 250px;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+.noteSlide {
+	width: 124px;
+	height: 124px;
+	border-radius: 10px;
+	position: absolute;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+.noteSlidingDown {
+	animation-name: slideDown;
+	background-color: red;
+}
+
+@keyframes slideDown {
+	from {
+		top: 0px;
+	}
+
+	to {
+		top: 368px;
+	}
+}
+
+.noteSlidingUp {
+	animation-name: slideUp;
+	background-color: blue;
+}
+
+@keyframes slideUp {
+	from {
+		top: 736px;
+	}
+
+	to {
+		top: 368px;
+	}
+}
