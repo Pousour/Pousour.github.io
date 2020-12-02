@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title> Création artistique - Emilien Pons </title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, inital-scale=1.0">
+		<meta http-equiv="X-UA Compatible" content="ie-edge">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+		<link rel="icon" type="image/png" href="logo.png" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="code.js"></script>
+	</head>
+
+<body onload="createRain();">
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/102/three.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+	<!-- --------------------------------------------------------------------------------- -->
+
+	<div class="loader">
+			<div></div>
+	</div>
+
+	<h1> For a better experience, press f11 </h1>
+
+	<img src="ny.jpg" id="fond">
+	
+
+	<div id="cities">
+				<div><p onclick="changetoparis()"> Paris </p></div>
+				<div><p onclick="changetosf()"> Shanghai </p></div>
+				<div><p onclick="changetola()"> Toronto </p></div>
+				<div><p onclick="changetony()"> New-York </p></div>
+				<div><p onclick="changetotokyo()"> Tokyo </p></div>
+	</div>
+
+
+	<div id="lecteur">
+		<figure>
+		    <figcaption>Toggle rain sound</figcaption>
+			<audio controls loop src="rain.mp3" id="pluie"></audio>
+		</figure>
+	<div>
+
+
+    <section class="rain"></section>
+
+</body>
+</html>
