@@ -1,0 +1,338 @@
+/* Commun à toutes */
+
+@font-face {
+  font-family: Noodle;
+  src: url(../fonts/big_noodle_titling.ttf) format("truetype");
+}
+body,
+html {
+  background-color: #3b3b3b;
+  margin: 0;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scrollbar-color: #373737 #fff;
+  scrollbar-width: thin;
+}
+#burger-container {
+  position: absolute;
+}
+#burger {
+  width: 40px;
+  position: absolute;
+  top: 5vh;
+  left: 10vw;
+  display: none;
+}
+#burger:hover {
+  cursor: pointer;
+}
+#fond {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-size: cover;
+  opacity: 0.1;
+  background-attachment: fixed;
+
+}
+header {
+  width: 100%;
+  height: 2vw;
+  top: 0;
+  left: 50%;
+  font-size: 15px;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  transition: 0.1s;
+  box-shadow: 10px 5px 5px #373737;
+  z-index: 10;
+}
+header a {
+  font-size: 0.8vw;
+  top: 20%;
+}
+a {
+  position: relative;
+  top: 15%;
+  height: 25px;
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s;
+  padding: 0 25px 0 10px;
+  font-weight: 650;
+}
+a:hover {
+  opacity: 0.6;
+}
+.navlogo {
+  position: relative;
+  margin: 0 0 0 5vw;
+  top: 17%;
+  height: 1.3vw;
+  width: auto;
+}
+.burgerlogo {
+  position: relative;
+  margin: 0;
+  height: 35px;
+  width: auto;
+}
+#burger-container a {
+  top: 14vh;
+  overflow: hidden;
+  text-overflow: clip;
+  display: flex;
+  padding: 0 0 40px 3.1vw;
+}
+#burger-container a:hover {
+  padding-left: 3.3vw;
+}
+#classement-equipes {
+  position: fixed;
+  height: auto;
+  max-height: 70vh;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 3px solid #fff;
+  box-shadow: 10px 5px 5px #373737;
+  scrollbar-width: thin;
+  top: 54vh;
+  left: 75vw;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+#classement-equipes div {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+#classement-equipes img {
+  position: relative;
+  width: 34px;
+  height: auto;
+  opacity: 1;
+  padding: 10px;
+}
+#classement-equipes img:hover {
+  cursor: pointer;
+}
+#classement-equipes h3 {
+  font-size: 0.9vw;
+  width: 10vw;
+  margin-top: 1.8vh;
+}
+#classement-equipes a {
+  position: relative;
+  height: 100%;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+#infos {
+  position: relative;
+  top: 8vh;
+  left: 10vw;
+  width: 55vw;
+  height: auto;
+  min-height: 90vh;
+  text-justify: inter-word;
+  text-align: justify;
+  text-shadow: 0.1em 0.1em 0.2em #000;
+}
+#infos a {
+  color: #fff;
+  padding: 0;
+}
+#infos h1 {
+  position: relative;
+  margin: 0;
+  font-family: Noodle;
+}
+#infos h1:last-of-type {
+  margin-top: 100px;
+}
+#infos h2 {
+  margin-top: 50px;
+  font-family: Noodle;
+}
+#infos p {
+  position: relative;
+  padding: 0 0 40px 0;
+  top: 2vh;
+}
+#infos img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+#reseaux {
+  position: relative;
+  margin-top: 200px;
+  height: 40vh;
+  background-color: #555;
+  text-align: center;
+}
+#reseaux h2 {
+  position: absolute;
+  font-family: Noodle, serif;
+  font-size: 4vh;
+  transform: translate(-50%, -50%);
+  left: 50vw;
+  top: 12vh;
+  width: auto;
+}
+#photosreseaux {
+  position: relative;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  display: flex;
+  justify-content: space-around;
+  width: 8vw;
+  top: 21vh;
+}
+#reseaux img {
+  position: relative;
+  width: 2.5vw;
+  min-width: 40px;
+  height: auto;
+  z-index: 10;
+  opacity: 1;
+}
+
+/* Spécifique aux pages d'accueil des jeux*/
+
+input[type="text"] {
+  position: relative;
+  left: 40%;
+  border-radius: 5px;
+  border: none;
+  padding: 6px;
+  margin-bottom: 50px;
+  transition: 0.3s ease-in-out;
+}
+input[type="button"] {
+  position: relative;
+  left: 40%;
+  padding: 6px 20px 6px 20px;
+  color: #fff;
+  border: none;
+  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+}
+select {
+  position: relative;
+  padding: 6px 20px 6px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  left: 40%;
+}
+
+/* Spécifique aux pages des équipes */
+
+#palma {
+  border: 3px solid #fff;
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px #373737;
+  height: auto;
+  width: 42vw;
+  margin: 30px 0 30px 10%;
+}
+#photos {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 6vh;
+  display: flex;
+  object-fit: cover;
+  justify-content: center;
+}
+#photos img {
+  position: relative;
+  opacity: 1;
+  width: 8.5vw;
+  height: 80%;
+  display: block;
+  margin: 0 auto;
+  transition: 0.3s;
+  object-fit: cover;
+  object-position: 50%;
+  padding: 7px 7px 0 7px;
+}
+#photos p {
+  margin: 0;
+}
+
+/* Bouton dark mode */
+
+/* The switch - the box around the slider */
+ .switch {
+  position: absolute;
+  display: inline-block;
+  width: 3vw;
+  height: 1.5vw;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  width: 1.1vw;
+  height: 1.1vw;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(1.4vw);
+  -ms-transform: translateX(1.4vw);
+  transform: translateX(1.4vw);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+} 

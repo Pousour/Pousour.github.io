@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>E-Stats - Counter-Strike</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../../css/equipes.css" />
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../../js/scriptEquipes.js"></script>
+    <link rel="icon" type="image/png" href="../../img/logo.png" />
+  </head>
+  <body>
+    <img src="../../img/csgo.jpg" alt="fondcs" id="fond" />
+    <header id="navbar">
+      <a href="../../index.html">Home</a>
+      <img src="../../img/logocsgo.png" class="navlogo">
+      <a href="../cs/cs.html">Counter-Strike</a>
+      <img src="../../img/logofortnite.png" class="navlogo">
+      <a href="../fortnite/fortnite.html">Fortnite</a>
+      <img src="../../img/logolol.png" class="navlogo">
+      <a href="../lol/lol.html">LoL</a>
+      <img src="../../img/logovalorant.png" class="navlogo">
+      <a href="../valorant/valorant.html">Valorant</a>
+      <img src="../../img/logorocket.png" class="navlogo">
+      <a href="../rocketleague/rocket.html">Rocket</a>
+      <img src="../../img/logosmash.png" class="navlogo">
+      <a href="../smash/smash.html">Smash</a>
+    </header>
+
+    <div id="burger-container">
+      <img src="../../img/burger.png" alt="burger" id="burger">
+    </div>
+
+    <div id="infos">
+      <h1>Présentation</h1>
+      <p>
+        Counter-Strike: Global Offensive est un FPS (First Person Shooter) multijoueur. 
+        Il a été crée par la compagnie Valve et est sortie le 21 août 2012 sur PC et consoles pour le prix de 14 euros. 
+        Depuis le 6 décembre 2018, le jeu est gratuit sur Steam.</br></br> 
+      </p>
+
+      <h1>Règles</h1>
+      <p>
+        Le mode de jeu le plus connu est le mode compétitif. Deux équipes de 5 joueurs s'affrontent sur une carte.
+        Sur cette carte se trouvent deux bombs points. 
+        Un round dure 1 minute et 55 secondes.
+        Le but d'une équipe sera le planter la bombe sur l'un de ces bombs points et de la défendre jusqu'à ce qu'elle explose.
+        Le but de l'autre équipe sera de défendre et empêcher que la bombe soit plantée.
+        Si au bout du temps imparti la bombe n'a pas été plantée et qu'il reste des joueurs en vie dans les deux équipes, 
+        les défenseurs remportent le round.
+        La première équipe à remporter 16 rounds remporte la victoire. 
+        Les équipes changent de rôle après 15 rounds joués.
+        Si tous les membres d'une équipe sont éliminés, le round est remporté par les survivants.</br></br>
+        Un point important du jeu est l'économie.
+        Les joueurs peuvent gagner de l'argent en réalisant différentes actions telles que: 
+        éliminer un ennemi, faire exploser une bombe ou terminer un round.
+        Cet argent permet aux joueurs d'investir dans des armes au début du round prochain.
+        Il existe un grand nombre d'armes classées dans différentes catégories, par exemple, 
+        les fusils à pompe, les fusils d'assaut, les pistolets etc.</br></br> 
+      </p>
+
+      <h1>News</h1>
+
+      <h2>Un joueur pro CS:GO se fait passer pour une femme lors d’un tournoi exclusivement féminin </h2>
+      <p>
+          Lenovo a organisé du 18 au 22 mai un tournoi online sur Counter-Strike : Global Offensive nommé Legion of Valkyrie et réservé à la gent féminine. 
+          Lors de cet évènement, 32 équipes de 5 joueuses se sont affrontées afin d’espérer gagner une partie du cash-prize de 1000$ mis en jeu.</br></br>
+
+          Des mesures de prévention, à savoir un appel vidéo avant chaque début de parti, avaient été prises pour éviter d’éventuelles usurpations d’identité.</br></br>
+
+          Ainsi le joueur concerné a réussi à passer à travers les mailles du filet au début grâce à un masque, des lunettes de vue et une perruque. Heureusement pour nous et malheureusement pour lui, les admins du tournoi, suspicieux, lui ont demandé d’abaisser son masque et ont ainsi découvert la supercherie. </br></br>
+
+          Les réactions de la communauté ont été sévères et les tweets ont fusé. Les internautes ont été choqué de cette usurpation et le jeune homme s’est ainsi excusé publiquement.</br></br>
+      </p>
+      <img src="../../img/twitterFlora.jpg">
+
+      <h1>Trouvez vos stats</h1>
+      <p>
+        Entrez votre id steam dans le champ suivant puis cliquez sur le bouton. Un exemple d'id valide est: 76561198313732506.
+        (Vous pouvez trouver votre id sur ce site <a href="https://steamidfinder.com/" target="_blank">Steamidfinder</a>)
+      </p>
+      <input type="text" id="id" name="id" required minlength="17" maxlength="17" size="17">
+      <input type="button" id="submit" value="Chercher" onclick="ouvrirStats();"/>
+    </div>
+
+  </body>
+</html>
